@@ -1,39 +1,100 @@
-
-body {
-  background-color: #101728; /* oklch(0.293 0.066 243.157) */
-  color: #fdfcff; /* oklch(0.977 0.013 236.62) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Permanent+Marker&family=Space+Grotesk:wght@300..700&display=swap');
+html {
+  scroll-padding-top: 60px;
 }
-
-.navbar .dropdown-menu{
+body {
+  background-color: #101728; 
+  color: #f0f9ff; 
+  font-size: 1.5rem;
+  font-family: 'Inter', sans-serif;
+}
+h1, h2, h3, .navbar-brand {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+}
+#current-section {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  color: #ffffff !important; 
+  font-size: 1.5rem;           
+}
+.navbar {
   background-color: #101728;
 }
 
-.navbar .nav-link {
-  color: #fdfcff;
-}
-
-.navbar .nav-link:hover {
-  color: #3761c9; /* oklch(0.5 0.134 242.749) */
-}
-
 .btn-primary {
-  background-color: #3761c9;
-  border-color: #3761c9;
+  background-color: #00598a;
+  border-color: #00598a;
 }
 
 .btn-primary:hover {
-  background-color: #2d4fa6;
-  border-color: #2d4fa6;
+  background-color: #0084d1;
+  border-color: #0084d1;
 }
-.dropdown-menu {
+
+.navbar-collapse {
   background-color: #101728; 
+  color: #f0f9ff;
 }
 
-.dropdown-item {
-  color: #fdfcff !important; 
+.navbar .nav-link {
+  color: #f0f9ff;
+  transition: color 0.3s ease;
 }
 
-.dropdown-item:hover {
-  background-color: #2d4fa6; 
-  color: #fdfcff !important; 
+.navbar .nav-link:hover {
+  color: #0084d1;
+}
+.navbar-toggler {
+  color: #f0f9ff !important; 
+}
+.navbar-toggler {
+  padding: 0.5rem;
+  color: #f0f9ff !important;
+  border: none;
+  background-color: transparent;
+}
+
+.navbar-toggler-icon {
+  filter: brightness(0) invert(1); 
+  width: 1.5em;
+  height: 1.5em;
+}
+.navbar .nav-link.dropdown-toggle:hover,
+.navbar .nav-link.dropdown-toggle:focus,
+.navbar .nav-link.dropdown-toggle[aria-expanded="true"] {
+  color: #0084d1; 
+  background-color: transparent; 
+}
+.nav-link.active {
+  font-weight: bold;
+  color: #00bfff !important;
+}
+
+footer {
+  background-color: #101728;
+  color: #f0f9ff;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.8rem;
+}
+footer a {
+  color: #f0f9ff;
+  text-decoration: none;
+}
+footer a:hover {
+  color: #0084d1;
+}
+.navbar a[title="Español"],
+.navbar a[title="English"] {
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.navbar a[title="Español"]:hover,
+.navbar a[title="English"]:hover {
+  opacity: 0.7;
+}
+#presentacion{
+  text-shadow: 3px 3px 7px #0084d1;
+  font-size: 4rem;
 }
