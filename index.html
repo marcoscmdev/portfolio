@@ -20,7 +20,7 @@
   <div class="container-fluid">
    <a class="navbar-brand d-flex align-items-center" href="index.html">
   <img src="imagenes/logodev.png" alt="Logo" style="width:55px;" class="rounded-pill">
-  <h3 id="current-section" class="ms-2 d-md-none fw-bold"> \ INICIO</h3> <!-- Cambialo en cada pagina-->
+  <h3 id="current-section" class="ms-2 d-md-none fw-bold"></h3> <!-- Cambialo en cada pagina futura implementacion dinamica-->
 </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
       <span class="navbar-toggler-icon"></span>
@@ -28,18 +28,22 @@
     <div class="collapse navbar-collapse" id="mynavbar">
       <ul class="navbar-nav mx-auto">
         <li class="nav-item">
-          <a class="nav-link mx-3" href="perfil.html">Sobre mí</a>
+          <a class="nav-link mx-3" href="#">Sobre mí</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link mx-3" href="proyectos.html">Proyectos</a>
+          <a class="nav-link mx-3" href="#">Proyectos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link mx-3" href="blog.html">Blog</a>
+          <a class="nav-link mx-3" href="#">Blog</a>
         </li>
       </ul>
-      <div class="d-flex align-items-center mx-3">
-        <a href="index.html" class="me-2 languages" title="Español">🇪🇸</a>
-        <a href="english/index-en.html" title="English">🇬🇧</a>
+      <div class="d-flex mx-3 dropdown">
+         <button class="btn  btn-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            🌐
+         </button>
+        <ul class="dropdown-menu">
+            <li><a href="index.html" class="dropdown-item" title="Español">🇪🇸</a></li>
+            <li><a href="english/index-en.html" class="dropdown-item" title="English">🇬🇧</a></li>
       </div>
     </div>
   </div>
@@ -48,19 +52,19 @@
 
   <main class="flex-fill">
 	<section class="container text-center mt-5">
-    <h1 id="presentacion">Explora mi portfolio </h1>
+    <h1 class="fade-in" id="presentacion">Explora mi portfolio </h1>
   <article>
     <h2 class="visually-hidden">Presentacion</h2>
   <p class="lead">Diseñado con Bootstrap y CSS3 personalizado</p>
-  <a href="contacto.html" class="btn btn-primary">¡Contáctame!</a>
+  <a href="mailto:info@marcoscm.dev" class="btn btn-primary">¡Contáctame!</a>
 </article>
 </section>
 
 </main>
 
 
-<footer class="text-center py-4 mt-5 border-top">
-  <p class="mb-1">© <span id="year"></span> Marcos CM</p>
+<footer class="text-center py-1 mt-1 border-top">
+  <p class="mb-1"> &copy; <span id="year"></span> Marcos CM</p>
   <div class="mb-2">
     <a href="https://github.com/marcoscmdev" class="mx-2" target="_blank" aria-label="GitHub">
       <i class="bi bi-github"></i>
