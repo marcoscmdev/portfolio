@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mi portfolio con proyectos personales de programación" />
+  <meta name="author" content="MarcosCM" />
+  <link rel="icon" type="image/x-icon" href="#" />
+  <link rel="apple-touch-icon" href="#" />
+  <title>Marcos CM Developer Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+
+  <div class="page-wrapper">
+    <header class="container-fluid">
+      <div class="banner">
+        <span class="nombre">Marcos cm</span><span class="slogan1">.dev</span>
+      </div>
+      <div class="slogan h2">Portfolio Estudiante DAM</div>
+
+      <nav class="navbar navbar-expand-sm navbar-retro">
+        <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link link-retro active" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-retro" href="sobremi.html">Sobre mi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-retro" href="proyectos.html">Proyectos</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container main-retrowave">
+
+  <!-- Sección 1: Saludo -->
+<section class="seccion saludo">
+  <h1>¡Hola! <br> Soy Marcos</h1>
+  <h2 class="primary">Bienvenido a mi portfolio</h2>
+
+  <p>
+    Este espacio es una carta de presentación interactiva. <br>
+    Aquí encontrarás quien soy, mi formación, habilidades, proyectos y algún que otro detalle personal.  
+    Todo hecho con mimo, constancia y muchas ganas de seguir creciendo.
+  </p>
+
+  <a href="sobremi.html" class="btn btn-outline-retrowave">Sobre mí</a>
+</section>
+
+  <hr />
+
+  <!-- Sección 2: Contacto -->
+  <section class="seccion contacto">
+    <h2>¿Quieres contactar conmigo?</h2>
+    <p>Rellena el formulario y estaré encantado de responderte.</p>
+    <button type="button" class="btn btn-retrowave" data-bs-toggle="modal" data-bs-target="#myModal">
+      Escríbeme
+    </button>
+  </section>
+
+  <hr />
+
+  <!-- Sección 3: Último proyecto -->
+  <section class="seccion proyectos">
+  <h3>Último proyecto subido</h3>
+  <p>Este es mi proyecto más reciente. ¡Échale un vistazo!</p>
+
+  <div class="card proyecto-card">
+    <div class="row g-0">
+      <div class="col-md-5">
+        <a href="proyectos/ahorcado.html">
+          <img src="imagenes/logo_retrowave.png" alt="Último proyecto" class="img-fluid img-thumbnail" />
+        </a>
+      </div>
+      <div class="col-md-7 d-flex flex-column justify-content-between">
+        <div class="card-body">
+          <h4 class="card-title">
+          <span class="resaltado">'El ahorcado'</span> <br> Ejercicio práctico
+          </h4>
+          <p class="card-text small">
+            De los primeros ejercicios divertidos y desafiantes que hice en clase de Programación en Java. Por este tipo de ejercicios he descubierto que me <span class="resaltado">¡Encanta la programación!</span>
+          </p>
+        </div>
+        <div class="card-footer-btn text-center">
+          <a href="proyectos/ahorcado.html" class="btn btn-sm btn-retrowave">Ver proyecto</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="btn-wrapper">
+    <a href="proyectos.html" class="btn btn-sm btn-outline-retrowave btn-proyectos-seccion">Ver todos los proyectos</a>
+  </div>
+</section>
+
+  <hr />
+
+  <!-- Bloque final tipo README -->
+  <section class="seccion readme">
+  <h3>¿Por qué este portfolio?</h3>
+
+  <p>
+    Decidí crear este portfolio como una <strong class="secondary">herramienta práctica y personal</strong>, un espacio donde mostrar quién soy, qué me apasiona y cómo trabajo.
+    Más allá de ser un simple escaparate, es una ventana abierta para 
+    <span class="primary">reclutadores y profesionales</span> interesados en conocer mi evolución y mi forma de entender el desarrollo web.
+  </p>
+
+  <h4 class="titulo-secundario primary">Inspiración y Estilo</h4>
+  <p>
+    Mi elección estética se basa en el estilo <em class="muted">retrowave</em>, una mezcla vibrante de nostalgia y futurismo que conecta profundamente con mis gustos personales.
+    Puede parecer una apuesta atrevida, incluso un poco <span class="primary">ortera</span>, pero es justo esa sensación la que buscaba: 
+    <strong class="secondary">capturar la esencia de la nostalgia</strong> que el Marcos de 10 años imaginaba para el futuro.
+  </p>
+  <p>
+    Me he inspirado en creadores como <strong class="secondary">A.L.L.I.S.O.N</strong>, <strong class="secondary">Emil Rotmayer</strong>,
+    <strong class="secondary">Voyage</strong>, y también en videojuegos retro como <em class="muted">Tetris</em> y más modernos como <em class="muted">Cyberpunk</em>.
+    El objetivo era crear un espacio coherente y atractivo en todas las secciones. Espero sinceramente que la navegación sea tan disfrutable para ti como lo fue para mí construirla.
+  </p>
+
+  <h4 class="titulo-secundario primary">El proceso de desarrollo</h4>
+  <p>
+    He utilizado <strong class="secondary">Bootstrap</strong> combinado con <strong class="secondary">CSS personalizado</strong> para dar vida a este proyecto, que me ha llevado varias semanas de trabajo y aprendizaje constante.
+    Partí de una estructura simple y he ido incorporando metodologías de organización de proyectos — gracias a 
+    <em class="muted">David Allen y su método Getting Things Done</em> — así como nuevos enfoques para la gestión del conocimiento, como el método <em class="muted">Zettelkasten</em>.
+  </p>
+  <p>
+    Este portfolio también ha sido un reto técnico: profundizar en el desarrollo 
+    <strong class="secondary">responsive, accesible y sencillo</strong>, que funcione sin importar el dispositivo o el nivel técnico del usuario.
+    Personalizar las clases de Bootstrap, crear animaciones sutiles y mantener el equilibrio entre <em class="muted">funcionalidad</em> y <em class="muted">estética</em> ha sido una experiencia muy enriquecedora.
+  </p>
+
+  <h4 class="titulo-secundario primary">Limitaciones y aprendizajes</h4>
+  <p>
+    Por ahora, este proyecto solo cuenta con dominio propio, sin hosting ni backend. Esto no es un reflejo de mis capacidades en backend, sino una decisión consciente para enfocarme en 
+    <strong class="secondary">soluciones frontend creativas y eficientes</strong>.
+    Trabajar con estas limitaciones me ha obligado a aprender nuevas técnicas de validación y optimización, 
+    potenciando mi capacidad para afrontar retos con recursos limitados.
+  </p>
+
+  <h4 class="titulo-secundario primary">Fuentes y créditos</h4>
+  <p>
+    Las fuentes tipográficas son de uso libre, obtenidas en 
+    <a href="https://www.fontspace.com" class="link-accent" target="_blank" rel="noopener noreferrer">FontSpace</a>.
+    Puedes consultar todos los créditos en el 
+    <a href="https://github.com/tuusuario/portfolio-readme" class="link-accent" target="_blank" rel="noopener noreferrer">README de este proyecto en GitHub (en inglés)</a>.
+  </p>
+
+  <h4 class="titulo-secundario primary">Un espacio en constante evolución</h4>
+  <p>
+    Soy consciente de que aún estoy en proceso de aprendizaje y algunas secciones pueden parecer incompletas.
+    Te pido que veas este portfolio como una <strong class="secondary">ventana abierta a mi evolución profesional</strong>.
+    Con el tiempo, iré añadiendo contenido más avanzado, proyectos backend, y posiblemente hosting propio para que puedas descargar o interactuar con mis trabajos.
+  </p>
+
+  <p class="mensaje-final">
+    <strong>Gracias por visitar mi portfolio.</strong> Espero que disfrutes navegando tanto como yo disfruté creándolo.
+    Estaré encantado de que me acompañes en este camino y poder mostrarte mis progresos poco a poco.
+  </p>
+
+  <p>
+    <em class="muted">Atentamente,</em><br />
+    <span class="secondary">Marcos Castro</span><br />
+    <span class="primary">Desarrollador en Formación</span>
+  </p>
+</section>
+
+</main>
+
+<!-- Modal Retrowave -->
+<div class="modal fade" id="myModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-retrowave">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h4 class="modal-title">Formulario de Contacto</h4>
+        <button type="button" class="btn-close btn-close-retrowave" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <form action="mailto:info@marcoscm.dev" method="post" enctype="text/plain">
+          <div class="mb-3 mt-3">
+            <label for="nombre">Nombre</label>
+            <input type="text" class="form-control form-retrowave" id="nombre" name="name" placeholder="Introduce tu nombre u organización" required />
+          </div>
+          <div class="mb-3 mt-3">
+            <label for="email">Email</label>
+            <input type="email" class="form-control form-retrowave" id="email" name="email" placeholder="Introduce tu email" required />
+          </div>
+          <div class="mb-3">
+            <label for="asunto">Asunto</label>
+            <input type="text" class="form-control form-retrowave" id="asunto" name="asunto" />
+          </div>
+          <div class="mb-3 mt-3">
+            <label for="mensaje">Mensaje</label>
+            <textarea class="form-control form-retrowave" rows="5" id="mensaje" name="mensaje" required></textarea>
+          </div>
+         <div class="modal-footer justify-content-center gap-3">
+         <button type="submit" class="btn btn-retrowave">Enviar</button>
+          </div>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+    <footer class="text-center py-1 mt-1 border-top pie">
+      <p class="mb-1 txt-foot"> &copy;2025 Marcos CM <br />Desarrollado con Bootstrap y CSS</p>
+      <div class="mb-2">
+        <a href="https://github.com/marcoscmdev" class="mx-2" target="_blank" aria-label="GitHub">
+          <i class="bi bi-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/marcos-castro-713492254/" class="mx-2" target="_blank" aria-label="LinkedIn">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="mailto:info@marcoscm.dev" class="mx-2" aria-label="Email">
+          <i class="bi bi-envelope"></i>
+        </a>
+        <a href="https://www.x.com/marcoscmdev" class="mx-2" aria-label="Twitter">
+          <i class="bi bi-twitter"></i>
+        </a>
+      </div>
+    </footer>
+
+  </div> <!-- cierre .page-wrapper -->
+<script>
+  function ajustarPaddingMain() {
+    const header = document.querySelector("header");
+    const main = document.querySelector("main");
+    const headerHeight = header.offsetHeight;
+    main.style.paddingTop = headerHeight + "px";
+  }
+
+  window.addEventListener("load", ajustarPaddingMain);
+  window.addEventListener("resize", ajustarPaddingMain);
+    // En móviles limitamos el padding-top
+  const esMovil = window.innerWidth <= 576;
+  const paddingTop = esMovil
+    ? Math.min(headerHeight, 60) + "px"
+    : headerHeight + "px";
+
+  main.style.paddingTop = paddingTop;
+</script>
+</body>
+</html>

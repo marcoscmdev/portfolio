@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Mi portfolio con proyectos personales de programacion" />
+  <meta name="author" content="MarcosCM" />
+  <title>Marcos CM Developer Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body >
+
+  <div class="page-wrapper">
+    <header class="container-fluid">
+      <div class="banner">
+        <span class="nombre">Marcos cm</span><span class="slogan1">.dev</span>
+      </div>
+      <div class="slogan h2">Portfolio Estudiante DAM</div>
+
+      <nav class="navbar navbar-expand-sm navbar-retro">
+        <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link link-retro" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-retro " href="sobremi.html">Sobre mi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-retro active" href="proyectos.html">Proyectos</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container main-retrowave main-proyectos">
+      <!--Contenido principal-->
+<section id="categorias">
+  <h3 class="text-center mb-4">[≡] Tipos de proyectos</h3>
+  <p class="text-center mb-4" style="max-width: 700px; margin: 0 auto; font-family: 'Roboto', sans-serif;">
+    Aquí encontrarás una selección de mis trabajos clasificados según su naturaleza.  
+    Algunos no tienen página propia por su sencillez o por cuestiones de privacidad, copyright o acuerdos con terceros.  
+    Aun así, merecen un hueco en mi portfolio por lo que representan en mi evolución profesional.
+  </p>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+
+    <!-- Tarjeta 1: Independientes -->
+    <div class="col tarjeta-retrowave tarjeta-independientes">
+      <div class="card h-100 border-primary shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title">[*] Independientes</h5>
+          <h6 class="card-subtitle mb-3 text-muted">
+            Ideas propias: webs, apps, videojuegos y locuras creativas.<br>
+            Mi rincón indie y experimental como desarrollador freelance.
+          </h6>
+          <ul class="list-group">
+            <li class="list-group-item list-group-item-action list-group-item-primary" data-bs-toggle="collapse" data-bs-target="#descInd1" aria-expanded="false" style="cursor: pointer;">
+              Titulo app
+              <div class="collapse px-3 py-2" id="descInd1">
+                <p class="small mb-2">Espacio reservado</p>
+                <a href="#" class="btn btn-sm btn-retrowave">Ver proyecto completo</a>
+              </div>
+            </li>
+            <li class="list-group-item list-group-item-action list-group-item-primary" data-bs-toggle="collapse" data-bs-target="#descInd2" aria-expanded="false" style="cursor: pointer;">
+              Titulo app
+              <div class="collapse px-3 py-2" id="descInd2">
+                <p class="small mb-2">Espacio Reservado</p>
+                <a href="#" class="btn btn-sm btn-retrowave">Ver proyecto completo</a>
+              </div>
+            </li>
+            <li class="list-group-item list-group-item-action list-group-item-primary" data-bs-toggle="collapse" data-bs-target="#descInd3" aria-expanded="false" style="cursor: pointer;">
+              titulo App
+              <div class="collapse px-3 py-2" id="descInd3">
+                <p class="small mb-2">Espacio Reservado</p>
+                <a href="#" class="btn btn-sm btn-retrowave">Ver proyecto completo</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tarjeta 2: Desde el aula -->
+    <div class="col tarjeta-retrowave tarjeta-aula">
+      <div class="card h-100 border-success shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title">[<>] Desde el aula</h5>
+          <h6 class="card-subtitle mb-3 text-muted">
+            Ejercicios y proyectos académicos que me ayudaron a entender conceptos clave.<br>
+            Pequeños retos que dejaron huella en mi aprendizaje.
+          </h6>
+
+      <ul class="list-group">
+  <li class="list-group-item list-group-item-action list-group-item-success">
+    <div class="d-flex flex-column align-items-start">
+      <h6 class="mb-1 fw-bold">El Ahorcado</h6>
+
+      <!-- Thumbnail -->
+      <img src="imagenes/logo_retrowave.png" alt="Miniatura El Ahorcado" class="img-fluid rounded mb-2 img-thumbnail" style="max-height: 120px; object-fit: contain;">
+
+      <!-- Descripción visible -->
+      <p class="small mb-2">
+        Juego clásico desarrollado en HTML, CSS y JavaScript. Ideal para practicar lógica, arrays y control de flujo.
+      </p>
+
+      <!-- Botón de colapso -->
+      <button class="btn btn-outline-retrowave btn-sm mb-2" data-bs-toggle="collapse" data-bs-target="#descAula1" aria-expanded="false">
+        Ver ficha técnica
+      </button>
+
+      <!-- Ficha técnica (collapse) -->
+      <div class="collapse w-100" id="descAula1">
+        <ul class="list-unstyled small ps-3 ficha-tecnica">
+          <li><strong>Título:</strong> El Ahorcado</li>
+          <li><strong>Versión:</strong> 1.0</li>
+          <li><strong>Fecha:</strong> Junio 2025</li>
+          <li><strong>Autor:</strong> Marcos CM (Estudiante DAM)</li>
+          <li><strong>Descripción:</strong> Juego en consola donde el jugador intenta adivinar una palabra. Desarrollado para practicar lógica condicional y estructuras repetitivas.</li>
+          <li><strong>Requisitos del sistema:</strong> Java 1.8 </li>
+          <li><strong>Lenguaje:</strong> Java</li>
+          <li><strong>Funcionalidades:</strong>
+            <ul>
+              <li>Seleccion aleatoria de palabras</li>
+              <li>Validación de entrada letra a letra</li>
+              <li>Conteo de errores y vidas</li>
+            </ul>
+          </li>
+          <li><strong>Interfaz de usuario:</strong> Aplicación de terminal, sin entorno gráfico</li>
+          <li><strong>Instrucciones de uso:</strong>
+            <ul>
+              <li>Compilar con: <code>javac Ahorcado.java</code></li>
+              <li>Ejecutar con: <code>java Ahorcado</code></li>
+            </ul>
+          </li>
+          <li><strong>Errores comunes y soluciones:</strong> 
+            - Asegurarse de tener Java instalado. Si no responde, reiniciar consola.
+          </li>
+          <li><strong>Licencia:</strong> Proyecto educativo de uso libre para fines de aprendizaje. No apto para distribución comercial sin permiso.</li>
+          <li>
+            <a href="https://github.com/marcoscmdev/ahorcado" target="_blank" class="btn btn-sm btn-outline-retrowave mt-2">
+              Ver en GitHub
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </li>
+</ul>
+      </div>
+
+      
+    </div>
+  </li>
+</ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tarjeta 3: En colaboración -->
+    <div class="col tarjeta-retrowave tarjeta-colaboracion">
+      <div class="card h-100 border-info shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title">{&} En colaboración</h5>
+          <h6 class="card-subtitle mb-3 text-muted">
+            Proyectos en equipo, colaboraciones con otros perfiles y trabajos realizados por encargo.<br>
+            También encontrarás fragmentos reutilizables de trabajos por cuenta ajena.
+          </h6>
+          <ul class="list-group">
+            <li class="list-group-item list-group-item-action list-group-item-info" data-bs-toggle="collapse" data-bs-target="#descColab1" aria-expanded="false" style="cursor: pointer;">
+              Aún no he colaborado con otros... ¡pero estoy abierto a propuestas!
+              <div class="collapse px-3 py-2" id="descColab1">
+                <p class="small mb-2">
+                  ¿Tienes una idea genial o buscas a alguien que te eche un cable con tu proyecto?
+                  Estaré encantado de escuchar tu propuesta y ver si podemos construir algo juntos.
+                </p>
+                <button class="btn btn-sm btn-retrowave" data-bs-toggle="modal" data-bs-target="#modalContacto">
+                  ¡Hablemos!
+                </button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+    </main>
+
+    <div class="modal fade" id="modalContacto" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-retrowave">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h4 class="modal-title">Formulario de Contacto</h4>
+        <button type="button" class="btn-close btn-close-retrowave" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <form action="mailto:info@marcoscm.dev" method="post" enctype="text/plain">
+          <div class="mb-3 mt-3">
+            <label for="nombre">Nombre</label>
+            <input type="text" class="form-control form-retrowave" id="nombre" name="name" placeholder="Introduce tu nombre u organización" required />
+          </div>
+          <div class="mb-3 mt-3">
+            <label for="email">Email</label>
+            <input type="email" class="form-control form-retrowave" id="email" name="email" placeholder="Introduce tu email" required />
+          </div>
+          <div class="mb-3">
+            <label for="asunto">Asunto</label>
+            <input type="text" class="form-control form-retrowave" id="asunto" name="asunto" value="Colaboración" readonly />
+          </div>
+          <div class="mb-3 mt-3">
+            <label for="mensaje">Mensaje</label>
+            <textarea class="form-control form-retrowave" rows="5" id="mensaje" name="mensaje" required></textarea>
+          </div>
+         <div class="modal-footer justify-content-center gap-3">
+         <button type="submit" class="btn btn-retrowave">Enviar</button>
+          </div>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+    <footer class="text-center py-1 mt-1 border-top pie">
+      <p class="mb-1 txt-foot"> &copy;2025 Marcos CM <br />Desarrollado con Bootstrap y CSS</p>
+      <div class="mb-2">
+        <a href="https://github.com/marcoscmdev" class="mx-2" target="_blank" aria-label="GitHub">
+          <i class="bi bi-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/marcos-castro-713492254/" class="mx-2" target="_blank" aria-label="LinkedIn">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="mailto:info@marcoscm.dev" class="mx-2" aria-label="Email">
+          <i class="bi bi-envelope"></i>
+        </a>
+        <a href="https://www.x.com/marcoscmdev" class="mx-2" aria-label="Twitter">
+          <i class="bi bi-twitter"></i>
+        </a>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    function ajustarPaddingMain() {
+      const header = document.querySelector("header");
+      const main = document.querySelector("main");
+      const headerHeight = header.offsetHeight;
+      main.style.paddingTop = headerHeight + "px";
+    }
+
+    window.addEventListener("load", ajustarPaddingMain);
+    window.addEventListener("resize", ajustarPaddingMain);
+
+    // En móviles limitamos el padding-top
+    const esMovil = window.innerWidth <= 576;
+    const header = document.querySelector("header");
+    const headerHeight = header.offsetHeight;
+    const paddingTop = esMovil
+      ? Math.min(headerHeight, 60) + "px"
+      : headerHeight + "px";
+
+    const main = document.querySelector("main");
+    main.style.paddingTop = paddingTop;
+  </script>
+
+</body>
+</html>
