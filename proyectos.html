@@ -2,12 +2,15 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Mi portfolio con proyectos personales de programacion" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mi portfolio con proyectos personales de programación" />
   <meta name="author" content="MarcosCM" />
+  <link rel="icon" type="image/x-icon" href="imagenes/favicon.ico" />
+  <link rel="apple-touch-icon" href="imagenes/favicon.ico" />
   <title>Marcos CM Developer Portfolio</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="css/estilos.css" />
 </head>
 <body >
@@ -40,154 +43,126 @@
       <!--Contenido principal-->
 <section id="categorias">
   <h3 class="text-center mb-4">[≡] Tipos de proyectos</h3>
-  <p class="text-center mb-4" style="max-width: 700px; margin: 0 auto; font-family: 'Roboto', sans-serif;">
-    Aquí encontrarás una selección de mis trabajos clasificados según su naturaleza.  
-    Algunos no tienen página propia por su sencillez o por cuestiones de privacidad, copyright o acuerdos con terceros.  
-    Aun así, merecen un hueco en mi portfolio por lo que representan en mi evolución profesional.
+  <p class="text-center mb-4" style="max-width: 700px; margin: 0 auto;">
+    Aquí encontrarás una selección de mis trabajos clasificados según su naturaleza.
   </p>
-  <div class="row row-cols-1 row-cols-md-3 g-4">
 
-    <!-- Tarjeta 1: Independientes -->
-    <div class="col tarjeta-retrowave tarjeta-independientes">
+  <div class="row row-cols-1 row-cols-md-2 g-4">
+
+    <!-- Independientes -->
+    <div class="col tarjeta-retrowave">
       <div class="card h-100 border-primary shadow-sm">
         <div class="card-body">
           <h5 class="card-title">[*] Independientes</h5>
           <h6 class="card-subtitle mb-3 text-muted">
-            Ideas propias: webs, apps, videojuegos y locuras creativas.<br>
-            Mi rincón indie y experimental como desarrollador freelance.
+            Webs, apps o ideas creativas personales.
           </h6>
-          <ul class="list-group">
-            <li class="list-group-item list-group-item-action list-group-item-primary" data-bs-toggle="collapse" data-bs-target="#descInd1" aria-expanded="false" style="cursor: pointer;">
-              Titulo app
-              <div class="collapse px-3 py-2" id="descInd1">
-                <p class="small mb-2">Espacio reservado</p>
-                <a href="#" class="btn btn-sm btn-retrowave">Ver proyecto completo</a>
-              </div>
-            </li>
-            <li class="list-group-item list-group-item-action list-group-item-primary" data-bs-toggle="collapse" data-bs-target="#descInd2" aria-expanded="false" style="cursor: pointer;">
-              Titulo app
-              <div class="collapse px-3 py-2" id="descInd2">
-                <p class="small mb-2">Espacio Reservado</p>
-                <a href="#" class="btn btn-sm btn-retrowave">Ver proyecto completo</a>
-              </div>
-            </li>
-            <li class="list-group-item list-group-item-action list-group-item-primary" data-bs-toggle="collapse" data-bs-target="#descInd3" aria-expanded="false" style="cursor: pointer;">
-              titulo App
-              <div class="collapse px-3 py-2" id="descInd3">
-                <p class="small mb-2">Espacio Reservado</p>
-                <a href="#" class="btn btn-sm btn-retrowave">Ver proyecto completo</a>
-              </div>
-            </li>
-          </ul>
+          <div class="mb-3">
+            <strong>Título App</strong> <br>
+            <small>Espacio reservado para futuros proyectos.</small>
+          </div>
+          <hr>
+          <div class="mb-3">
+            <strong>Título Juego</strong><br />
+            <small>Espacio reservado para futuros proyectos.</small>
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- Tarjeta 2: Desde el aula -->
-    <div class="col tarjeta-retrowave tarjeta-aula">
-      <div class="card h-100 border-success shadow-sm">
-        <div class="card-body">
-          <h5 class="card-title">[<>] Desde el aula</h5>
-          <h6 class="card-subtitle mb-3 text-muted">
-            Ejercicios y proyectos académicos que me ayudaron a entender conceptos clave.<br>
-            Pequeños retos que dejaron huella en mi aprendizaje.
-          </h6>
+<!-- Tarjeta: Desde el aula -->
+<div class="col tarjeta-retrowave">
+  <div class="card h-100 border-success shadow-sm">
+    <div class="card-body">
+      <h4 class="card-title text-center">[<>] Desde el aula</h4>
+      <h6 class="card-subtitle mb-4 text-muted text-center">
+        Ejercicios y prácticas organizadas por año y tecnología.  
+        Todos están disponibles en GitHub, agrupados en carpetas.
+      </h6>
 
-      <ul class="list-group">
-  <li class="list-group-item list-group-item-action list-group-item-success">
-    <div class="d-flex flex-column align-items-start">
-      <h6 class="mb-1 fw-bold">El Ahorcado</h6>
+     <!-- Acordeón Retrowave -->
+<div class="accordion accordion-retrowave" id="accordionAula">
 
-      <!-- Thumbnail -->
-      <img src="imagenes/logo_retrowave.png" alt="Miniatura El Ahorcado" class="img-fluid rounded mb-2 img-thumbnail" style="max-height: 120px; object-fit: contain;">
-
-      <!-- Descripción visible -->
-      <p class="small mb-2">
-        Juego clásico desarrollado en HTML, CSS y JavaScript. Ideal para practicar lógica, arrays y control de flujo.
-      </p>
-
-      <!-- Botón de colapso -->
-      <button class="btn btn-outline-retrowave btn-sm mb-2" data-bs-toggle="collapse" data-bs-target="#descAula1" aria-expanded="false">
-        Ver ficha técnica
+  <!-- Bloque 2026 -->
+  <div class="accordion-item border-success">
+    <h2 class="accordion-header" id="heading2026">
+      <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2026" aria-expanded="false" aria-controls="collapse2026">
+        Destacados 2026 (próximamente)
       </button>
-
-      <!-- Ficha técnica (collapse) -->
-      <div class="collapse w-100" id="descAula1">
-        <ul class="list-unstyled small ps-3 ficha-tecnica">
-          <li><strong>Título:</strong> El Ahorcado</li>
-          <li><strong>Versión:</strong> 1.0</li>
-          <li><strong>Fecha:</strong> Junio 2025</li>
-          <li><strong>Autor:</strong> Marcos CM (Estudiante DAM)</li>
-          <li><strong>Descripción:</strong> Juego en consola donde el jugador intenta adivinar una palabra. Desarrollado para practicar lógica condicional y estructuras repetitivas.</li>
-          <li><strong>Requisitos del sistema:</strong> Java 1.8 </li>
-          <li><strong>Lenguaje:</strong> Java</li>
-          <li><strong>Funcionalidades:</strong>
-            <ul>
-              <li>Seleccion aleatoria de palabras</li>
-              <li>Validación de entrada letra a letra</li>
-              <li>Conteo de errores y vidas</li>
-            </ul>
-          </li>
-          <li><strong>Interfaz de usuario:</strong> Aplicación de terminal, sin entorno gráfico</li>
-          <li><strong>Instrucciones de uso:</strong>
-            <ul>
-              <li>Compilar con: <code>javac Ahorcado.java</code></li>
-              <li>Ejecutar con: <code>java Ahorcado</code></li>
-            </ul>
-          </li>
-          <li><strong>Errores comunes y soluciones:</strong> 
-            - Asegurarse de tener Java instalado. Si no responde, reiniciar consola.
-          </li>
-          <li><strong>Licencia:</strong> Proyecto educativo de uso libre para fines de aprendizaje. No apto para distribución comercial sin permiso.</li>
-          <li>
-            <a href="https://github.com/marcoscmdev/ahorcado" target="_blank" class="btn btn-sm btn-outline-retrowave mt-2">
-              Ver en GitHub
-            </a>
-          </li>
-        </ul>
+    </h2>
+    <div id="collapse2026" class="accordion-collapse collapse" aria-labelledby="heading2026" data-bs-parent="#accordionAula">
+      <div class="accordion-body">
+        <p class="small mb-2">
+          Reservado para futuras prácticas o proyectos en tecnologías como Swift, Python o Kotlin.
+        </p>
+        <span class="badge" id="proximamente">En construcción</span>
       </div>
     </div>
-  </li>
-</ul>
-      </div>
+  </div>
 
-      
-    </div>
-  </li>
-</ul>
+  <!-- Bloque 2025 -->
+  <div class="accordion-item border-success">
+    <h2 class="accordion-header" id="heading2025">
+      <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2025" aria-expanded="true" aria-controls="collapse2025">
+        Destacados 2025
+      </button>
+    </h2>
+    <div id="collapse2025" class="accordion-collapse collapse show" aria-labelledby="heading2025" data-bs-parent="#accordionAula">
+      <div class="accordion-body">
+
+        <!-- Java -->
+        <div class="mb-3 ps-2 border-start border-success">
+          <h6 class="fw-semibold mb-1">Java</h6>
+          <p class="small mb-1">Lógica, POO, juegos por consola, estructuras de control…</p>
+          <a href="https://github.com/marcoscmdev/featured-2025/tree/main/java" target="_blank" class="btn btn-sm btn-outline-retrowave">Ver ejercicios Java</a>
         </div>
+
+        <!-- PHP -->
+        <div class="mb-3 ps-2 border-start border-success">
+          <h6 class="fw-semibold mb-1">PHP</h6>
+          <p class="small mb-1">Formularios, sesiones, operaciones en servidor…</p>
+          <a href="https://github.com/marcoscmdev/featured-2025/tree/main/php" target="_blank" class="btn btn-sm btn-outline-retrowave">Ver ejercicios PHP</a>
+        </div>
+
+        <!-- JavaScript -->
+        <div class="mb-3 ps-2 border-start border-success">
+          <h6 class="fw-semibold mb-1">JavaScript</h6>
+          <p class="small mb-1">Mini juegos, DOM, eventos, lógica de cliente.</p>
+          <a href="https://github.com/marcoscmdev/featured-2025/tree/main/javascript" target="_blank" class="btn btn-sm btn-outline-retrowave">Ver ejercicios JS</a>
+        </div>
+
       </div>
     </div>
+  </div>
 
-    <!-- Tarjeta 3: En colaboración -->
-    <div class="col tarjeta-retrowave tarjeta-colaboracion">
+</div> <!-- Fin accordion-retrowave -->
+    </div>
+  </div>
+</div>
+   
+
+    <!-- Colaboración (media fila) -->
+    <div class="col-12 col-md-6 mx-md-auto tarjeta-retrowave">
       <div class="card h-100 border-info shadow-sm">
         <div class="card-body">
           <h5 class="card-title">{&} En colaboración</h5>
           <h6 class="card-subtitle mb-3 text-muted">
-            Proyectos en equipo, colaboraciones con otros perfiles y trabajos realizados por encargo.<br>
-            También encontrarás fragmentos reutilizables de trabajos por cuenta ajena.
+            Trabajos en equipo o ideas conjuntas.  
+            Estoy abierto a propuestas.
           </h6>
-          <ul class="list-group">
-            <li class="list-group-item list-group-item-action list-group-item-info" data-bs-toggle="collapse" data-bs-target="#descColab1" aria-expanded="false" style="cursor: pointer;">
-              Aún no he colaborado con otros... ¡pero estoy abierto a propuestas!
-              <div class="collapse px-3 py-2" id="descColab1">
-                <p class="small mb-2">
-                  ¿Tienes una idea genial o buscas a alguien que te eche un cable con tu proyecto?
-                  Estaré encantado de escuchar tu propuesta y ver si podemos construir algo juntos.
-                </p>
-                <button class="btn btn-sm btn-retrowave" data-bs-toggle="modal" data-bs-target="#modalContacto">
-                  ¡Hablemos!
-                </button>
-              </div>
-            </li>
-          </ul>
+          <div class="mb-2">
+            ¿Tienes una idea genial o buscas a alguien con quien colaborar?
+          </div>
+          <button class="btn btn-retrowave btn-sm" data-bs-toggle="modal" data-bs-target="#modalContacto">
+            ¡Hablemos!
+          </button>
         </div>
       </div>
     </div>
 
   </div>
 </section>
+
     </main>
 
     <div class="modal fade" id="modalContacto" tabindex="-1" aria-hidden="true">
@@ -200,7 +175,7 @@
       </div>
 
       <div class="modal-body">
-        <form action="mailto:info@marcoscm.dev" method="post" enctype="text/plain">
+       <form id="contact-form">
           <div class="mb-3 mt-3">
             <label for="nombre">Nombre</label>
             <input type="text" class="form-control form-retrowave" id="nombre" name="name" placeholder="Introduce tu nombre u organización" required />
@@ -273,6 +248,25 @@
     const main = document.querySelector("main");
     main.style.paddingTop = paddingTop;
   </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  (function() {
+    emailjs.init("tmouDIr5JG_9DHdoB");
+  })();
+
+  document.getElementById("contact-form").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    emailjs.sendForm("service_zz8lc7j", "template_8ec5s5y", this)
+      .then(function(response) {
+        alert("Mensaje enviado correctamente. ¡Gracias por contactar!");
+        document.getElementById("contact-form").reset();
+      }, function(error) {
+        alert("Ocurrió un error al enviar el mensaje: " + error.text);
+      });
+  });
+</script>
 
 </body>
 </html>

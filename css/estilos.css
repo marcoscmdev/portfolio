@@ -1,34 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @font-face {
   font-family: 'CyberBlast';
-  src: url('../fonts/CyberBlast-JpK2o.otf') format('truetype');
+  src: url('../fonts/CyberBlast.woff') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'NeonAdventure';
-  src: url('../fonts/NeonAdventure-VoOy.ttf') format('truetype');
+  src: url('../fonts/NeonAdventure.woff') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
-@font-face {
-  font-family: 'NeonFuture';
-  src: url('../fonts/NeonFuture-6YY2A.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
+
 @keyframes aparecerYParpadear {
   0% { opacity: 0; }
   10%, 18%, 22%, 25%, 53%, 57%, 100% { opacity: 1; }
   20%, 24%, 55% { opacity: 0; }
-}
-@keyframes entraDesdeLaDerecha {
-  0% { transform: translateX(100%); opacity: 0; }
-  100% { transform: translateX(0); opacity: 1; }
-}
-@keyframes escribir {
-  from { width: 0; }
-  to { width: 29ch; }
 }
 /* Animación modal*/
 @keyframes neon-border-move {
@@ -39,7 +26,6 @@
     background-position: 100% 50%;
   }
 }
-
 
 :root {
   --color-primary: #F706CF;   
@@ -102,7 +88,6 @@ header {
   background-clip: text;
   color: transparent;
   display: inline-block;
-  animation: entraDesdeLaDerecha 2.5s ease-out;
   text-align: left;
 }
 
@@ -112,19 +97,15 @@ header {
   color: #CD2DAC;
   opacity: 0;
   text-shadow: 0 0 2px #CD2DAC, 0 0 20px #CD2DAC;
-  animation: aparecerYParpadear 1.75s infinite;
-  animation-delay: 2.5s;
+  animation: aparecerYParpadear 1s infinite;
+  animation-delay: 1s;
 }
 
 .slogan {
-  font-family: 'NeonFuture', Courier, monospace;
+  font-family: 'Orbitron', sans-serif;
   color: var(--color-secondary);
   white-space: nowrap;
-  overflow: hidden;
-  border-right: 2px solid var(--color-muted);
   width: 0;
-  animation: escribir 1.5s steps(30, end) 3s forwards;
-  text-align: center;
 }
 
 .link-retro:hover {
@@ -700,48 +681,86 @@ textarea.form-retrowave:focus {
 }
 
 
-.tarjeta-retrowave .collapse {
-  background: rgba(109, 18, 245, 0.15);
-  border-radius: 8px;
-  margin: 0.25rem 0 1rem 0;
-  padding: 0.75rem 1rem;
-  font-family: 'Roboto', sans-serif;
-  color: #F0EDEE;
-  box-shadow: inset 0 0 10px #6D12F5;
-  transition: background-color 0.1ms ease;
+.accordion-retrowave .accordion-item {
+  background-color: transparent;
+  border: 1px solid var(--color-secondary);
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  overflow: hidden;
 }
 
-.tarjeta-retrowave .collapse p.small {
-  margin-bottom: 0.5rem;
-  color: #6082A6;
-  font-size: 1rem;
+.accordion-retrowave .accordion-header .accordion-button {
+  background-color: #1a1a1a;
+  color: var(--color-text);
+  font-weight: bold;
+  border: none;
+  box-shadow: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  position: relative;
+  padding-left: 2.5rem;
+}
+
+/* Botón activo */
+.accordion-retrowave .accordion-button:not(.collapsed) {
+  background-color: var(--color-accent);
+  color: var(--color-text);
+}
+
+/* Icono personalizado + / - */
+.accordion-retrowave .accordion-button::before {
+  content: '+';
+  position: absolute;
+  left: 1rem;
+  font-size: 1.25rem;
+  color: var(--color-secondary);
+  transition: transform 0.3s ease;
+}
+
+.accordion-retrowave .accordion-button:not(.collapsed)::before {
+  content: '−';
+}
+
+/* Elimina el icono flecha de Bootstrap */
+.accordion-retrowave .accordion-button::after {
+  display: none;
+}
+
+/* Enfoque accesible */
+.accordion-retrowave .accordion-button:focus {
+  box-shadow: 0 0 0 0.2rem rgba(247, 6, 207, 0.4);
+}
+
+/* Contenido del acordeón */
+.accordion-retrowave .accordion-body,
+.accordion-retrowave .accordion-collapse,
+.accordion-retrowave .collapse.show {
+  background-color: transparent !important;
+  color: var(--color-text);
+  padding: 1rem;
 }
 
 .btn-completo:hover{
-   background: var(--color-primary);
+  background: var(--color-primary);
   box-shadow: 0 0 20px var(--color-primary);
   color: var(--color-text);
   margin-right: 5px;
 }
 
-button[aria-expanded="true"] { /* elemento collapse desplegado */
+#proximamente { 
   background-color: var(--color-primary); 
   color: #fff;
   font-weight: bold;
 }
-button[aria-expanded="true"]:hover { /* elemento collapse desplegado */
-font-family: 'Orbitron', sans-serif;
-  font-weight: 700;
-  color: var(--color-secondary);
-  border: 2px solid var(--color-secondary);
-  background: transparent;
-  padding: 0.5rem 1rem;
-  border-radius: 12px;
-  transition: all 0.3s ease;
-  cursor: pointer;
-  display: inline-block;
-  text-decoration: none;
-  margin-top: 1rem;
+
+.accordion-button {
+  background-color: #1e1e2f;
+  color: #00ffe0;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #2a2a3c;
+  color: #00ffe0;
+  box-shadow: inset 0 -1px 0 rgba(0,0,0,.125);
 }
 
 .ficha-tecnica{
@@ -818,12 +837,17 @@ font-family: 'Orbitron', sans-serif;
   position: relative;
   z-index: 0;
 }
-.archivador-retro h3, h4{
+
+
+.archivador-retro h3{
+  font-family: 'NeonAdventure', sans-serif;
+}
+.archivador-retro h4{
   font-family: 'Orbitron', sans-serif;
 }
 .archivador-retro h5{
   font-family: 'Roboto', sans-serif;
-  color: var(--color-muted);
+  color: #FF9F40;
 }
 .archivador-retro::before {
   content: "";
@@ -834,6 +858,96 @@ font-family: 'Orbitron', sans-serif;
   background: linear-gradient(270deg, #F706CF, #2DE2E6, #6D12F5, #F706CF);
   background-size: 600% 600%;
   animation: neon-border-move 30s linear infinite;
+}
+.archivador-retro ul {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.archivador-retro ul li h5 {
+  position: relative;
+  padding-left: 2rem;
+  color: #FF9F40;
+  font-family: 'Roboto', sans-serif;
+}
+
+.archivador-retro ul li h5::before {
+  content: "</>";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #FF9F40;
+  font-family: 'Orbitron', monospace;
+  font-weight: bold;
+}
+
+.tarjeta-retro {
+  font-family: 'Roboto', sans-serif;
+  color: var(--color-text); 
+}
+.tarjeta-retro  card-title{
+  font-family: 'Roboto', sans-serif;
+  color: #FF9F40;
+}
+
+.tarjeta-retro h5 {
+  font-family: 'Roboto', sans-serif;
+  color: #FF9F40;
+}
+
+.tarjeta-retro h6.card-subtitle,
+.tarjeta-retro .text-muted {
+  font-family: 'Orbitron', sans-serif;
+  color: var(--color-muted) !important; 
+}
+
+.tarjeta-retro ul.small {
+  font-size: 0.85rem;
+  font-family: 'Roboto', sans-serif;
+  list-style: none;
+  padding-left: 0;
+}
+
+.tarjeta-retro ul.small li::before {
+  content: "» ";
+  color: #FF9F40;
+}
+
+
+
+.tooltip-inner {
+  background-color: rgba(0, 0, 0, 0.75); /* similar a bg-black bg-opacity-50 */
+  color: var(--color-secondary); /* un cian tipo retro */
+  border: 1px solid var(--color-primary); 
+  font-size: 0.75rem;
+  padding: 6px 10px;
+  border-radius: 6px;
+  max-width: 240px;
+  text-align: center;
+  box-shadow: 0 0 8px rgba(0, 255, 255, 0.4);
+  font-family: 'Orbitron', sans-serif;
+}
+
+
+.tooltip.bs-tooltip-top .tooltip-arrow::before,
+.tooltip.bs-tooltip-auto[data-popper-placement^="top"] .tooltip-arrow::before {
+  border-top-color: #17a2b8;
+}
+
+.tooltip.bs-tooltip-bottom .tooltip-arrow::before,
+.tooltip.bs-tooltip-auto[data-popper-placement^="bottom"] .tooltip-arrow::before {
+  border-bottom-color: #17a2b8;
+}
+
+.tooltip.bs-tooltip-start .tooltip-arrow::before,
+.tooltip.bs-tooltip-auto[data-popper-placement^="left"] .tooltip-arrow::before {
+  border-left-color: #17a2b8;
+}
+
+.tooltip.bs-tooltip-end .tooltip-arrow::before,
+.tooltip.bs-tooltip-auto[data-popper-placement^="right"] .tooltip-arrow::before {
+  border-right-color: #17a2b8;
 }
 
 @media (max-width: 768px) {
