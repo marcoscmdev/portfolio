@@ -9,7 +9,7 @@
   <meta name="author" content="Marcos Castro" />
   <link rel="icon" type="image/x-icon" href="/favicon.ico" />
   <link rel="apple-touch-icon" href="/favicon.ico" />
-  <title>Marcos Castro — Developer</title>
+  <title>Marcos Castro — Software Developer</title>
 
   <!-- Bootstrap 5 CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
@@ -47,16 +47,16 @@
 
       <div class="collapse navbar-collapse" id="navMenu">
         <!-- Center nav links -->
-        <ul class="navbar-nav mx-auto gap-1">
-          <li class="nav-item"><a class="nav-link" href="#about">Sobre mí</a></li>
+        <ul class="navbar-nav me-auto gap-1">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
           <li class="nav-item"><a class="nav-link" href="#experiencia">Experiencia</a></li>
           <li class="nav-item"><a class="nav-link" href="#software">Software</a></li>
-          <li class="nav-item"><a class="nav-link" href="#fricadas">Fricadas</a></li>
+          <li class="nav-item"><a class="nav-link" href="#playground">Playground</a></li>
         </ul>
 
         <!-- Right icons -->
         <div class="nav-icons">
-          <a href="mailto:castromirandamarcos@gmail.com" title="Email">
+          <a href="mailto:info@marcoscm.dev" title="Email">
             <i class="bi bi-envelope-fill"></i>
           </a>
           <a href="https://github.com/marcoscmdev" target="_blank" rel="noopener" title="GitHub">
@@ -85,15 +85,14 @@
       <div class="hero-content">
         <p class="hero-greeting">Hola!</p>
         <h1 class="hero-title">
-          soy <span class="hero-name">Marcos Castro</span><span class="hero-dev">.dev</span>
+          Soy <span class="hero-name">Marcos Castro</span><span class="hero-dev">.dev</span>
         </h1>
         <p class="hero-bio">
-          Soy desarrollador de software junior afincado en Santiago de Compostela.
-          Me gusta el desarrollo de producto, y me entretengo creando soluciones de software.
-          También me encantan los videojuegos, la tecnología y el futuro con un toque de nostalgia retro.
+          Desarrollador de software en Santiago de Compostela. 
+          Construyo productos digitales y exploro ideas entre la tecnología, los videojuegos y la estética retrofuturista.
         </p>
-        <a href="mailto:castromirandamarcos@gmail.com" class="btn-hello">
-          <i class="bi bi-envelope-open"></i> Dime hola!
+        <a href="mailto:info@marcoscm.dev" class="btn-hello">
+          <i class="bi bi-envelope-open"></i> Saludame!
         </a>
       </div>
     </div>
@@ -105,20 +104,20 @@
   <section id="about">
     <div class="container px-4">
 
-      <p class="section-eyebrow">Sobre mí</p>
-      <h2 class="section-headline">About</h2>
+      <h2 class="slash-heading">About</h2>
 
-      <div class="row g-5 align-items-start">
+      <!-- Intro: ancho completo -->
+      <p class="about-intro">
+        Desarrollador de software junior, en búsqueda de mi primer empleo como programador.
+        Me interesa especialmente la construcción de productos digitales y el desarrollo de soluciones de software desde cero.
+      </p>
 
-        <!-- Left: text + stack -->
+      <!-- Stack + imagen lado a lado -->
+      <div class="row g-5 align-items-center mb-4">
+
         <div class="col-md-8">
-          <p class="about-intro">
-            Desarrollador de software junior, actualmente en búsqueda activa de mi primer empleo como desarrollador.
-            Apasionado por el desarrollo de producto y por construir soluciones desde cero.
-            Estudiante de DAM con nota media de sobresaliente y experiencia reciente en entorno industrial real.
-          </p>
+          <p class="about-stack-intro">Algunas tecnologías con las que trabajo:</p>
 
-          <!-- Stack -->
           <div class="row g-4 mt-1">
 
             <div class="col-6 col-md-4">
@@ -157,124 +156,118 @@
             </div>
 
           </div>
-
-          <p class="about-personal">
-            En mi tiempo libre, soy un buen friki que disfruta trasteando con tecnología,
-            perdiendo horas en videojuegos, leyendo fantasía y ciencia ficción,
-            admirando el trabajo de gente como Matt Reeves y montando Legos.
-            La nostalgia retro manda.
-          </p>
         </div>
 
-        <!-- Right: portrait -->
-        <div class="col-md-4 d-flex justify-content-center justify-content-md-end align-items-start">
+        <!-- Portrait cuadrado -->
+        <div class="col-md-4 d-flex justify-content-center">
           <div class="portrait-frame">
             <img src="imagenes/portrait.png" alt="Marcos Castro" class="portrait-img" />
           </div>
         </div>
 
       </div>
+
+      <!-- Personal: ancho completo -->
+      <p class="about-personal">
+        En mi tiempo libre, me muevo entre videojuegos, lectura de fantasía y ciencia ficción.
+        También disfruto trasteando con tecnología y explorando ideas por pura curiosidad.
+      </p>
     </div>
   </section>
 
   <!-- ============================================================
-       EXPERIENCIA — TIMELINE
+       EXPERIENCIA — TABS VERTICALES
        ============================================================ -->
   <section id="experiencia">
     <div class="container px-4">
 
-      <p class="section-eyebrow">Experiencia</p>
-      <h2 class="section-headline">Trayectoria</h2>
+      <h2 class="slash-heading">Experiencia</h2>
 
-      <div class="timeline" id="timeline">
+      <div class="row g-0 exp-wrap">
 
-        <!-- ── Cortizo (default open) ── -->
-        <div class="tl-entry">
-          <a class="tl-trigger" data-bs-toggle="collapse" href="#expCortizo"
-             data-bs-parent="#timeline" aria-expanded="true" role="button">
-            <span class="tl-dot"></span>
-            <div class="tl-meta">
-              <span class="tl-company">Cortizo</span>
-              <span class="tl-period">Desarrollador de Software &nbsp;·&nbsp; Mar – Jun 2026 &nbsp;·&nbsp; Padrón</span>
-            </div>
-          </a>
-          <div class="collapse show tl-body" id="expCortizo">
-            <p>Entorno industrial real. Migración de sistemas legacy y desarrollo de herramientas internas.</p>
-            <ul>
-              <li>Migración de aplicaciones de .NET Framework 4.8 a .NET 6</li>
-              <li>Desarrollo de herramientas en <strong>WinForms y WPF</strong> para automatizar procesos industriales</li>
-              <li>Validaciones, procesamiento de datos JSON y generación dinámica de PDF y etiquetas</li>
-              <li>Corrección de bugs y mejora de interfaces en producción (escritorio, tablets y PDA)</li>
-              <li>Trabajo con <strong>Git</strong> en equipo de desarrollo colaborativo</li>
-            </ul>
+        <!-- Left: company list -->
+        <div class="col-auto exp-nav-col">
+          <div class="d-flex flex-column" role="tablist">
+            <button class="exp-tab-btn active" data-bs-toggle="pill" data-bs-target="#expCortizo"
+                    type="button" role="tab" aria-selected="true">
+              Cortizo
+            </button>
+            <button class="exp-tab-btn" data-bs-toggle="pill" data-bs-target="#expCoremain"
+                    type="button" role="tab" aria-selected="false">
+              Coremain
+            </button>
+            <button class="exp-tab-btn" data-bs-toggle="pill" data-bs-target="#expTeletech"
+                    type="button" role="tab" aria-selected="false">
+              Teletech · Unitono
+            </button>
+            <button class="exp-tab-btn" data-bs-toggle="pill" data-bs-target="#expOtras"
+                    type="button" role="tab" aria-selected="false">
+              Otras
+            </button>
           </div>
         </div>
 
-        <!-- ── Coremain ── -->
-        <div class="tl-entry">
-          <a class="tl-trigger" data-bs-toggle="collapse" href="#expCoremain"
-             data-bs-parent="#timeline" aria-expanded="false" role="button">
-            <span class="tl-dot"></span>
-            <div class="tl-meta">
-              <span class="tl-company">Coremain</span>
-              <span class="tl-period">IT Support Specialist &nbsp;·&nbsp; Oct 2017 – Nov 2022 &nbsp;·&nbsp; Santiago de Compostela</span>
+        <!-- Right: content panels -->
+        <div class="col exp-content-col">
+          <div class="tab-content">
+
+            <!-- Cortizo -->
+            <div class="tab-pane fade show active" id="expCortizo" role="tabpanel">
+              <h3 class="exp-role">
+                Desarrollador de Software  @<span class="exp-company"> Cortizo</span>
+              </h3>
+              <p class="exp-period">Mar 2026 – Jun 2026 &nbsp;·&nbsp; Padrón, España</p>
+              <ul class="exp-list">
+                <li>Migración de aplicaciones de .NET Framework 4.8 a .NET 6</li>
+                <li>Desarrollo de herramientas internas en <strong>WinForms y WPF</strong> para automatizar procesos industriales</li>
+                <li>Validaciones, procesamiento de datos JSON y generación dinámica de PDF y etiquetas para operarios</li>
+                <li>Corrección de bugs y mejora de interfaces en producción (escritorio, tablets y PDA)</li>
+                <li>Trabajo con <strong>Git</strong> en entorno de desarrollo colaborativo real</li>
+              </ul>
             </div>
-          </a>
-          <div class="collapse tl-body" id="expCoremain">
-            <p>Soporte técnico de primer y segundo nivel. Cliente principal: Vodafone.</p>
-            <ul>
-              <li>Gestión de incidencias mediante CRM y sistemas de ticketing</li>
-              <li>Auditoría de procesos de facturación y mantenimiento de datos en <strong>SAP</strong></li>
-              <li>Coordinación temporal de equipo y mejora de satisfacción al cliente</li>
-              <li>Documentación técnica y escalado de problemas complejos</li>
-            </ul>
+
+            <!-- Coremain -->
+            <div class="tab-pane fade" id="expCoremain" role="tabpanel">
+              <h3 class="exp-role">
+                IT Support Specialist @ <span class="exp-company"> Coremain</span>
+              </h3>
+              <p class="exp-period">Oct 2017 – Nov 2022 &nbsp;·&nbsp; Santiago de Compostela</p>
+              <ul class="exp-list">
+                <li>Soporte técnico de primer y segundo nivel en entorno HelpDesk y backoffice. Cliente: <strong>Vodafone</strong></li>
+                <li>Gestión y resolución de incidencias mediante CRM y sistemas de ticketing</li>
+                <li>Auditoría de procesos de facturación y mantenimiento de datos en <strong>SAP</strong></li>
+                <li>Coordinación temporal de equipo y participación en mejora de satisfacción al cliente</li>
+                <li>Documentación técnica y escalado de problemas complejos</li>
+              </ul>
+            </div>
+
+            <!-- Teletech / Unitono -->
+            <div class="tab-pane fade" id="expTeletech" role="tabpanel">
+              <h3 class="exp-role">
+                Soporte Técnico @ <span class="exp-company"> Teletech · Unitono</span>
+              </h3>
+              <p class="exp-period">2008 – 2010 &nbsp;·&nbsp; Madrid</p>
+              <ul class="exp-list">
+                <li><strong>Teletech (2008–2009):</strong> Soporte técnico iPhone / iOS para Movistar y Apple. Configuración avanzada de redes WiFi, 3G y dispositivos iOS / macOS</li>
+                <li><strong>Unitono (2009–2010):</strong> Soporte B2B a puntos de venta Movistar bajo marco ITIL. Gestión de incidencias y backoffice</li>
+              </ul>
+            </div>
+
+            <!-- Otras -->
+            <div class="tab-pane fade" id="expOtras" role="tabpanel">
+              <h3 class="exp-role">Otras Experiencias</h3>
+              <p class="exp-period">2005 – 2017</p>
+              <ul class="exp-list">
+                <li><strong>Autónomo – Comercio local (2016–2017):</strong> Gestión integral de negocio propio, logística y atención al cliente</li>
+                <li><strong>RYC Alarmas, Barcelona (2005–2006):</strong> Auxiliar Administrativo, gestión documental y digitalización</li>
+                <li><strong>Eniac Informática (2005):</strong> Prácticas como Técnico Informático — montaje, reparación y soporte</li>
+              </ul>
+            </div>
+
           </div>
         </div>
 
-        <!-- ── Teletech / Unitono ── -->
-        <div class="tl-entry">
-          <a class="tl-trigger" data-bs-toggle="collapse" href="#expTeletech"
-             data-bs-parent="#timeline" aria-expanded="false" role="button">
-            <span class="tl-dot"></span>
-            <div class="tl-meta">
-              <span class="tl-company">Teletech · Unitono</span>
-              <span class="tl-period">Soporte Técnico &nbsp;·&nbsp; 2008 – 2010 &nbsp;·&nbsp; Madrid</span>
-            </div>
-          </a>
-          <div class="collapse tl-body" id="expTeletech">
-            <ul>
-              <li>
-                <strong>Teletech (2008–2009):</strong> Soporte técnico iPhone/iOS para Movistar y Apple.
-                Configuración avanzada de redes WiFi, 3G y dispositivos iOS/macOS.
-              </li>
-              <li>
-                <strong>Unitono (2009–2010):</strong> Soporte B2B a puntos de venta Movistar bajo marco ITIL.
-                Gestión de incidencias y backoffice.
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- ── Anteriores ── -->
-        <div class="tl-entry">
-          <a class="tl-trigger" data-bs-toggle="collapse" href="#expOtras"
-             data-bs-parent="#timeline" aria-expanded="false" role="button">
-            <span class="tl-dot"></span>
-            <div class="tl-meta">
-              <span class="tl-company">Otras experiencias</span>
-              <span class="tl-period">2005 – 2017</span>
-            </div>
-          </a>
-          <div class="collapse tl-body" id="expOtras">
-            <ul>
-              <li><strong>Autónomo – Comercio local (2016–2017):</strong> Gestión integral de negocio propio.</li>
-              <li><strong>RYC Alarmas, Barcelona (2005–2006):</strong> Auxiliar Administrativo, gestión documental y digitalización.</li>
-              <li><strong>Eniac Informática (2005):</strong> Prácticas como Técnico Informático — montaje, reparación y soporte.</li>
-            </ul>
-          </div>
-        </div>
-
-      </div><!-- /timeline -->
+      </div><!-- /row -->
     </div>
   </section>
 
@@ -284,17 +277,12 @@
   <section id="software">
     <div class="container px-4">
 
-      <div class="section-repos">
-        <p class="section-eyebrow mb-0">Software</p>
-        <a href="https://github.com/marcoscmdev" target="_blank" rel="noopener" class="repo-btn">
-          <i class="bi bi-github"></i> GitHub
-        </a>
-        <a href="https://gitlab.com/MarcosCMDev" target="_blank" rel="noopener" class="repo-btn">
-          <i class="bi bi-gitlab"></i> GitLab
-        </a>
-      </div>
-      <p style="font-size:0.72rem; color:var(--text-dim); letter-spacing:1px; margin-bottom:2.5rem;">
-        Accede a mis repositorios
+      <h2 class="slash-heading">Software</h2>
+      <p class="software-intro">
+        Accede a mis repositorios en
+        <a href="https://github.com/marcoscmdev" target="_blank" rel="noopener" class="link-repo">GitHub</a>
+        y
+        <a href="https://gitlab.com/MarcosCMDev" target="_blank" rel="noopener" class="link-repo">GitLab</a>.
       </p>
 
       <!-- Carousel -->
@@ -303,14 +291,10 @@
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <div class="carousel-slide-ph">Capturas de pantalla próximamente</div>
-            </div>
-            <div class="carousel-item">
-              <div class="carousel-slide-ph">Capturas de pantalla próximamente</div>
+              <img src="imagenes/publi.png" class="carousel-slide-img" alt="Publi App" />
             </div>
             <div class="carousel-item">
               <div class="carousel-slide-ph">Capturas de pantalla próximamente</div>
@@ -334,23 +318,25 @@
         <div class="col-md-4">
           <div class="project-card">
             <div class="card-body">
-              <h3 class="project-title">Homney App</h3>
+              <div class="card-header-row">
+                <h3 class="project-title">Homney App</h3>
+                <div class="card-icon-links">
+                  <a href="https://github.com/marcoscmdev" target="_blank" rel="noopener" title="GitHub"><i class="bi bi-github"></i></a>
+                </div>
+              </div>
               <p class="project-desc">
                 App Android publicada en Google Play Store.
                 Desarrollo completo del cliente Android, backend propio con PHP, API REST y MySQL.
                 Diseño, implementación y despliegue realizados de forma autónoma.
               </p>
+            </div>
+            <div class="card-footer">
               <div class="project-tags">
                 <span class="tech-tag">Java</span>
                 <span class="tech-tag">Android SDK</span>
                 <span class="tech-tag">PHP</span>
                 <span class="tech-tag">MySQL</span>
               </div>
-            </div>
-            <div class="card-footer">
-              <a href="https://github.com/marcoscmdev" target="_blank" rel="noopener" class="project-link">
-                <i class="bi bi-github"></i> Repositorio
-              </a>
             </div>
           </div>
         </div>
@@ -359,21 +345,24 @@
         <div class="col-md-4">
           <div class="project-card">
             <div class="card-body">
-              <h3 class="project-title">Ejercicios Destacados 2025</h3>
+              <div class="card-header-row">
+                <h3 class="project-title">Ejercicios Destacados 2025</h3>
+                <div class="card-icon-links">
+                  <a href="https://github.com/marcoscmdev/featured-2025" target="_blank" rel="noopener" title="GitHub"><i class="bi bi-github"></i></a>
+                  <a href="https://gitlab.com/MarcosCMDev" target="_blank" rel="noopener" title="GitLab"><i class="bi bi-gitlab"></i></a>
+                </div>
+              </div>
               <p class="project-desc">
                 Los ejercicios y prácticas más estimulantes del curso 2024/2025.
                 Lógica, POO, backend y frontend — los retos favoritos en código.
               </p>
+            </div>
+            <div class="card-footer">
               <div class="project-tags">
                 <span class="tech-tag">Java</span>
                 <span class="tech-tag">PHP</span>
                 <span class="tech-tag">JavaScript</span>
               </div>
-            </div>
-            <div class="card-footer">
-              <a href="https://github.com/marcoscmdev/featured-2025" target="_blank" rel="noopener" class="project-link">
-                <i class="bi bi-github"></i> Repositorio
-              </a>
             </div>
           </div>
         </div>
@@ -399,8 +388,7 @@
   <section id="fricadas">
     <div class="container px-4">
 
-      <p class="section-eyebrow">Fricadas</p>
-      <h2 class="section-headline">Side Projects</h2>
+      <h2 class="slash-heading">Playground</h2>
 
       <div class="fricadas-empty">
         <i class="bi bi-joystick"></i>
