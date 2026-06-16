@@ -5,282 +5,420 @@
   <link rel="canonical" href="https://marcoscm.dev/" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Mi portfolio con proyectos personales de programación" />
-  <meta name="author" content="MarcosCM" />
- <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <meta name="description" content="Marcos Castro — Desarrollador de Software Junior. Portfolio personal." />
+  <meta name="author" content="Marcos Castro" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
   <link rel="apple-touch-icon" href="/favicon.ico" />
-  <title>Marcos CM Developer Portfolio</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
-  <link rel="stylesheet" href="css/estilos.css" />
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-PJXDQXTX6N"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <title>Marcos Castro — Developer</title>
 
-  gtag('config', 'G-PJXDQXTX6N');
-</script>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons 1.11 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/estilos.css" />
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PJXDQXTX6N"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-PJXDQXTX6N');
+  </script>
 </head>
 <body>
 
-  <div class="page-wrapper">
-    <header class="container-fluid">
-      <div class="banner">
-        <span class="nombre">Marcos cm</span><span class="slogan1">.dev</span>
-      </div>
-      <div class="slogan h2">Portfolio Estudiante DAM</div>
+  <!-- ============================================================
+       NAVBAR
+       ============================================================ -->
+  <nav id="mainNav" class="navbar navbar-expand-md fixed-top">
+    <div class="container-fluid px-4">
 
-      <nav class="navbar navbar-expand-sm navbar-retro">
-        <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link link-retro active" href="index.html">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link link-retro" href="sobremi.html">Sobre mi</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link link-retro" href="proyectos.html">Proyectos</a>
-            </li>
-          </ul>
+      <!-- Brand: scroll to top -->
+      <a class="navbar-brand" href="#hero">Marcos Castro</a>
+
+      <!-- Mobile toggler -->
+      <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse" data-bs-target="#navMenu"
+              aria-controls="navMenu" aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <!-- Center nav links -->
+        <ul class="navbar-nav mx-auto gap-1">
+          <li class="nav-item"><a class="nav-link" href="#about">Sobre mí</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experiencia">Experiencia</a></li>
+          <li class="nav-item"><a class="nav-link" href="#software">Software</a></li>
+          <li class="nav-item"><a class="nav-link" href="#fricadas">Fricadas</a></li>
+        </ul>
+
+        <!-- Right icons -->
+        <div class="nav-icons">
+          <a href="mailto:castromirandamarcos@gmail.com" title="Email">
+            <i class="bi bi-envelope-fill"></i>
+          </a>
+          <a href="https://github.com/marcoscmdev" target="_blank" rel="noopener" title="GitHub">
+            <i class="bi bi-github"></i>
+          </a>
+          <a href="https://gitlab.com/MarcosCMDev" target="_blank" rel="noopener" title="GitLab">
+            <i class="bi bi-gitlab"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/marcoscmdev/" target="_blank" rel="noopener" title="LinkedIn">
+            <i class="bi bi-linkedin"></i>
+          </a>
+          <a href="#" title="Infojobs">
+            <i class="bi bi-briefcase-fill"></i>
+          </a>
         </div>
-      </nav>
-    </header>
+      </div>
 
-    <main class="container main-retrowave">
+    </div>
+  </nav>
 
-  <!-- Sección 1: Saludo -->
-<section class="seccion saludo">
-  <h1>¡Hola! <br> Soy Marcos</h1>
-  <h2 class="primary">Bienvenido a mi portfolio</h2>
-
-  <p>
-    Este espacio es una carta de presentación interactiva. <br>
-    Aquí encontrarás quien soy, mi formación, habilidades, proyectos y algún que otro detalle personal.  
-    Todo hecho con mimo, constancia y muchas ganas de seguir creciendo.
-  </p>
-
-  <a href="sobremi.html" class="btn btn-outline-retrowave">Sobre mí</a>
-</section>
-
-  <hr />
-
-  <!-- Sección 2: Contacto -->
-  <section class="seccion contacto">
-    <h2>¿Quieres contactar conmigo?</h2>
-    <p>Rellena el formulario y estaré encantado de responderte.</p>
-    <button type="button" class="btn btn-retrowave" data-bs-toggle="modal" data-bs-target="#myModal">
-      Escríbeme
-    </button>
+  <!-- ============================================================
+       HERO
+       ============================================================ -->
+  <section id="hero">
+    <div class="container px-4">
+      <div class="hero-content">
+        <p class="hero-greeting">Hola!</p>
+        <h1 class="hero-title">
+          soy <span class="hero-name">Marcos Castro</span><span class="hero-dev">.dev</span>
+        </h1>
+        <p class="hero-bio">
+          Soy desarrollador de software junior afincado en Santiago de Compostela.
+          Me gusta el desarrollo de producto, y me entretengo creando soluciones de software.
+          También me encantan los videojuegos, la tecnología y el futuro con un toque de nostalgia retro.
+        </p>
+        <a href="mailto:castromirandamarcos@gmail.com" class="btn-hello">
+          <i class="bi bi-envelope-open"></i> Dime hola!
+        </a>
+      </div>
+    </div>
   </section>
 
-  <hr />
+  <!-- ============================================================
+       ABOUT ME
+       ============================================================ -->
+  <section id="about">
+    <div class="container px-4">
 
-  <!-- Sección 3: Último proyecto -->
-  <section class="seccion proyectos">
-  <h3>Último proyecto subido</h3>
-  <p>Este es mi proyecto más reciente. ¡Échale un vistazo!</p>
+      <p class="section-eyebrow">Sobre mí</p>
+      <h2 class="section-headline">About</h2>
 
-  <div class="card proyecto-card">
-  <div class="row g-0">
-    <div class="col-md-5">
-      <a href="https://github.com/marcoscmdev/featured-2025" target="_blank" rel="noopener noreferrer">
-        <img src="imagenes/logo_retrowave.png" alt="Repositorio con ejercicios destacados en Java, PHP y JavaScript" class="img-fluid img-thumbnail" />
-      </a>
+      <div class="row g-5 align-items-start">
+
+        <!-- Left: text + stack -->
+        <div class="col-md-8">
+          <p class="about-intro">
+            Desarrollador de software junior, actualmente en búsqueda activa de mi primer empleo como desarrollador.
+            Apasionado por el desarrollo de producto y por construir soluciones desde cero.
+            Estudiante de DAM con nota media de sobresaliente y experiencia reciente en entorno industrial real.
+          </p>
+
+          <!-- Stack -->
+          <div class="row g-4 mt-1">
+
+            <div class="col-6 col-md-4">
+              <p class="stack-label">Lenguajes</p>
+              <ul class="stack-list">
+                <li><span class="dot-red">›</span> Java</li>
+                <li><span class="dot-red">›</span> C#</li>
+                <li><span class="dot-red">›</span> PHP</li>
+                <li><span class="dot-red">›</span> JavaScript</li>
+                <li><span class="dot-red">›</span> SQL</li>
+                <li><span class="dot-red">›</span> HTML / CSS</li>
+              </ul>
+            </div>
+
+            <div class="col-6 col-md-4">
+              <p class="stack-label">Tecnologías</p>
+              <ul class="stack-list">
+                <li><span class="dot-blue">›</span> .NET 6</li>
+                <li><span class="dot-blue">›</span> WinForms / WPF</li>
+                <li><span class="dot-blue">›</span> Android SDK</li>
+                <li><span class="dot-blue">›</span> MySQL</li>
+                <li><span class="dot-blue">›</span> Bootstrap</li>
+                <li><span class="dot-blue">›</span> REST API</li>
+              </ul>
+            </div>
+
+            <div class="col-6 col-md-4">
+              <p class="stack-label">Herramientas</p>
+              <ul class="stack-list">
+                <li><span class="dot-red">›</span> Git / GitHub</li>
+                <li><span class="dot-red">›</span> Android Studio</li>
+                <li><span class="dot-red">›</span> Visual Studio</li>
+                <li><span class="dot-red">›</span> VS Code</li>
+                <li><span class="dot-red">›</span> Postman</li>
+              </ul>
+            </div>
+
+          </div>
+
+          <p class="about-personal">
+            En mi tiempo libre, soy un buen friki que disfruta trasteando con tecnología,
+            perdiendo horas en videojuegos, leyendo fantasía y ciencia ficción,
+            admirando el trabajo de gente como Matt Reeves y montando Legos.
+            La nostalgia retro manda.
+          </p>
+        </div>
+
+        <!-- Right: portrait -->
+        <div class="col-md-4 d-flex justify-content-center justify-content-md-end align-items-start">
+          <div class="portrait-frame">
+            <img src="imagenes/portrait.png" alt="Marcos Castro" class="portrait-img" />
+          </div>
+        </div>
+
+      </div>
     </div>
-    <div class="col-md-7 d-flex flex-column justify-content-between">
-      <div class="card-body">
-        <h4 class="card-title">
-          <span class="resaltado">'Ejercicios destacados 2025'</span><br> Los ejercicios más demandantes y estimulantes — ¡mis retos favoritos en código!
-        </h4>
-        <p class="card-text small">
-          Ejercicios y prácticas realizados durante el curso 2024/2025 en tecnologías como Java, PHP y JavaScript. 
-          <br> Explora el código y descarga para aprender y reutilizar.
-        </p>
-      </div>
-      <div class="card-footer-btn text-center">
-        <a href="https://github.com/marcoscmdev/featured-2025" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-retrowave">
-          Ver repositorio
-        </a>
-      </div>
+  </section>
+
+  <!-- ============================================================
+       EXPERIENCIA — TIMELINE
+       ============================================================ -->
+  <section id="experiencia">
+    <div class="container px-4">
+
+      <p class="section-eyebrow">Experiencia</p>
+      <h2 class="section-headline">Trayectoria</h2>
+
+      <div class="timeline" id="timeline">
+
+        <!-- ── Cortizo (default open) ── -->
+        <div class="tl-entry">
+          <a class="tl-trigger" data-bs-toggle="collapse" href="#expCortizo"
+             data-bs-parent="#timeline" aria-expanded="true" role="button">
+            <span class="tl-dot"></span>
+            <div class="tl-meta">
+              <span class="tl-company">Cortizo</span>
+              <span class="tl-period">Desarrollador de Software &nbsp;·&nbsp; Mar – Jun 2026 &nbsp;·&nbsp; Padrón</span>
+            </div>
+          </a>
+          <div class="collapse show tl-body" id="expCortizo">
+            <p>Entorno industrial real. Migración de sistemas legacy y desarrollo de herramientas internas.</p>
+            <ul>
+              <li>Migración de aplicaciones de .NET Framework 4.8 a .NET 6</li>
+              <li>Desarrollo de herramientas en <strong>WinForms y WPF</strong> para automatizar procesos industriales</li>
+              <li>Validaciones, procesamiento de datos JSON y generación dinámica de PDF y etiquetas</li>
+              <li>Corrección de bugs y mejora de interfaces en producción (escritorio, tablets y PDA)</li>
+              <li>Trabajo con <strong>Git</strong> en equipo de desarrollo colaborativo</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- ── Coremain ── -->
+        <div class="tl-entry">
+          <a class="tl-trigger" data-bs-toggle="collapse" href="#expCoremain"
+             data-bs-parent="#timeline" aria-expanded="false" role="button">
+            <span class="tl-dot"></span>
+            <div class="tl-meta">
+              <span class="tl-company">Coremain</span>
+              <span class="tl-period">IT Support Specialist &nbsp;·&nbsp; Oct 2017 – Nov 2022 &nbsp;·&nbsp; Santiago de Compostela</span>
+            </div>
+          </a>
+          <div class="collapse tl-body" id="expCoremain">
+            <p>Soporte técnico de primer y segundo nivel. Cliente principal: Vodafone.</p>
+            <ul>
+              <li>Gestión de incidencias mediante CRM y sistemas de ticketing</li>
+              <li>Auditoría de procesos de facturación y mantenimiento de datos en <strong>SAP</strong></li>
+              <li>Coordinación temporal de equipo y mejora de satisfacción al cliente</li>
+              <li>Documentación técnica y escalado de problemas complejos</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- ── Teletech / Unitono ── -->
+        <div class="tl-entry">
+          <a class="tl-trigger" data-bs-toggle="collapse" href="#expTeletech"
+             data-bs-parent="#timeline" aria-expanded="false" role="button">
+            <span class="tl-dot"></span>
+            <div class="tl-meta">
+              <span class="tl-company">Teletech · Unitono</span>
+              <span class="tl-period">Soporte Técnico &nbsp;·&nbsp; 2008 – 2010 &nbsp;·&nbsp; Madrid</span>
+            </div>
+          </a>
+          <div class="collapse tl-body" id="expTeletech">
+            <ul>
+              <li>
+                <strong>Teletech (2008–2009):</strong> Soporte técnico iPhone/iOS para Movistar y Apple.
+                Configuración avanzada de redes WiFi, 3G y dispositivos iOS/macOS.
+              </li>
+              <li>
+                <strong>Unitono (2009–2010):</strong> Soporte B2B a puntos de venta Movistar bajo marco ITIL.
+                Gestión de incidencias y backoffice.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- ── Anteriores ── -->
+        <div class="tl-entry">
+          <a class="tl-trigger" data-bs-toggle="collapse" href="#expOtras"
+             data-bs-parent="#timeline" aria-expanded="false" role="button">
+            <span class="tl-dot"></span>
+            <div class="tl-meta">
+              <span class="tl-company">Otras experiencias</span>
+              <span class="tl-period">2005 – 2017</span>
+            </div>
+          </a>
+          <div class="collapse tl-body" id="expOtras">
+            <ul>
+              <li><strong>Autónomo – Comercio local (2016–2017):</strong> Gestión integral de negocio propio.</li>
+              <li><strong>RYC Alarmas, Barcelona (2005–2006):</strong> Auxiliar Administrativo, gestión documental y digitalización.</li>
+              <li><strong>Eniac Informática (2005):</strong> Prácticas como Técnico Informático — montaje, reparación y soporte.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div><!-- /timeline -->
     </div>
-  </div>
-</div>
+  </section>
 
-  <div class="btn-wrapper">
-    <a href="proyectos.html" class="btn btn-sm btn-outline-retrowave btn-proyectos-seccion">Ver todos los proyectos</a>
-  </div>
-</section>
+  <!-- ============================================================
+       SOFTWARE
+       ============================================================ -->
+  <section id="software">
+    <div class="container px-4">
 
-  <hr />
+      <div class="section-repos">
+        <p class="section-eyebrow mb-0">Software</p>
+        <a href="https://github.com/marcoscmdev" target="_blank" rel="noopener" class="repo-btn">
+          <i class="bi bi-github"></i> GitHub
+        </a>
+        <a href="https://gitlab.com/MarcosCMDev" target="_blank" rel="noopener" class="repo-btn">
+          <i class="bi bi-gitlab"></i> GitLab
+        </a>
+      </div>
+      <p style="font-size:0.72rem; color:var(--text-dim); letter-spacing:1px; margin-bottom:2.5rem;">
+        Accede a mis repositorios
+      </p>
 
-  <!-- Bloque final tipo README -->
-  <section class="seccion readme">
-  <h3>¿Por qué este portfolio?</h3>
-
-  <p>
-    Decidí crear este portfolio como una <strong class="secondary">herramienta práctica y personal</strong>, un espacio donde mostrar quién soy, qué me apasiona y cómo trabajo.
-    Más allá de ser un simple escaparate, es una ventana abierta para 
-    <span class="primary">todos</span>los interesados en conocer mi evolución y mi forma de entender el desarrollo web.
-  </p>
-
-  <h4 class="titulo-secundario primary">Inspiración y Estilo</h4>
-  <p>
-    Mi elección estética se basa en el estilo <em class="muted">retrowave</em>, una mezcla vibrante de nostalgia y futurismo que conecta profundamente con mis gustos personales.
-    Puede parecer una apuesta atrevida, incluso un poco <span class="primary">ortera</span>, pero es justo esa sensación la que buscaba: 
-    <strong class="secondary">capturar la esencia de la nostalgia</strong> que el Marcos de 10 años imaginaba para el futuro (que es hoy).
-  </p>
-  <p>
-    El objetivo era crear un espacio coherente y atractivo en todas las secciones. Espero sinceramente que la navegación sea tan disfrutable para ti como lo fue para mí construirla.
-  </p>
-
-  <h4 class="titulo-secundario primary">El proceso de desarrollo</h4>
-  <p>
-    He utilizado <strong class="secondary">Bootstrap</strong> combinado con <strong class="secondary">CSS personalizado</strong> para dar vida a este proyecto, que me ha llevado varias semanas de trabajo y aprendizaje constante.
-    
-  </p>
-  <p>
-    Este portfolio también ha sido un reto técnico: profundizar en el desarrollo 
-    <strong class="secondary">responsive, accesible y sencillo</strong>, que funcione y se visualice correctamente sin importar el dispositivo o el nivel técnico del usuario.
-    Personalizar las clases de Bootstrap, crear animaciones sutiles y mantener el equilibrio entre <em class="muted">funcionalidad</em> y <em class="muted">estética</em> ha sido una experiencia muy enriquecedora.
-  </p>
-
-  <h4 class="titulo-secundario primary">Limitaciones y aprendizajes</h4>
-<p>
-  Este proyecto está desarrollado únicamente con tecnologías frontend y se aloja mediante dominio propio, sin backend ni hosting de pago. 
-  Esta elección no refleja una falta de conocimientos, sino una decisión estratégica: 
-  <strong class="secondary">he optado por no invertir económicamente en hosting hasta que mi carrera como desarrollador despegue</strong>, 
-  y al mismo tiempo, me he impuesto el reto de construir un portfolio funcional y optimizado con recursos limitados.
-  Esta experiencia me ha llevado a explorar soluciones creativas, validar formularios sin backend y optimizar cada detalle, 
-  mejorando así mi capacidad para adaptarme y resolver problemas en entornos con restricciones técnicas o presupuestarias.
-</p>
-
-  <h4 class="titulo-secundario primary">Fuentes y créditos</h4>
-  <p>
-    Las fuentes tipográficas son de uso libre, obtenidas en 
-    <a href="https://www.fontspace.com" class="link-accent" target="_blank" rel="noopener noreferrer">FontSpace</a>.
-    Puedes consultar todos los créditos en el 
-    <a href="https://github.com/marcoscmdev/portfolio/tree/main#readme" class="link-accent" target="_blank" rel="noopener noreferrer">README de este proyecto en GitHub (en inglés)</a>.
-  </p>
-
-  <h4 class="titulo-secundario primary">Un espacio en constante evolución</h4>
-  <p>
-    Soy consciente de que aún estoy en proceso de aprendizaje y algunas secciones pueden parecer incompletas.
-    Te pido que veas este portfolio como una <strong class="secondary">ventana abierta a mi evolución profesional</strong>.
-    Con el tiempo, iré añadiendo contenido más avanzado, proyectos, backend, y posiblemente hosting propio para que puedas descargar o interactuar con mis trabajos.
-  </p>
-
-  <p class="mensaje-final">
-    <strong>Gracias por visitar mi portfolio.</strong> Espero que disfrutes navegando tanto como yo disfruté creándolo.
-    Estaré encantado de que me acompañes en este camino y poder mostrarte mis progresos poco a poco.
-  </p>
-
-  <p>
-    <em class="muted">Atentamente,</em><br />
-    <span class="secondary">Marcos Castro</span><br />
-    <span class="primary">Desarrollador en Formación</span>
-  </p>
-</section>
-
-</main>
-
-<!-- Modal Retrowave -->
-<div class="modal fade" id="myModal" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-retrowave">
-    <div class="modal-content">
-
-      <div class="modal-header">
-        <h4 class="modal-title">Formulario de Contacto</h4>
-        <button type="button" class="btn-close btn-close-retrowave" data-bs-dismiss="modal"></button>
+      <!-- Carousel -->
+      <div class="carousel-wrap">
+        <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="carousel-slide-ph">Capturas de pantalla próximamente</div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-slide-ph">Capturas de pantalla próximamente</div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-slide-ph">Capturas de pantalla próximamente</div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
       </div>
 
-      <div class="modal-body">
-        <form id="contact-form" >
-          <div class="mb-3 mt-3">
-            <label for="nombre">Nombre</label>
-            <input type="text" class="form-control form-retrowave" id="nombre" name="name" placeholder="Introduce tu nombre u organización" required />
+      <!-- Project cards -->
+      <div class="row g-4">
+
+        <!-- Homney App -->
+        <div class="col-md-4">
+          <div class="project-card">
+            <div class="card-body">
+              <h3 class="project-title">Homney App</h3>
+              <p class="project-desc">
+                App Android publicada en Google Play Store.
+                Desarrollo completo del cliente Android, backend propio con PHP, API REST y MySQL.
+                Diseño, implementación y despliegue realizados de forma autónoma.
+              </p>
+              <div class="project-tags">
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">Android SDK</span>
+                <span class="tech-tag">PHP</span>
+                <span class="tech-tag">MySQL</span>
+              </div>
+            </div>
+            <div class="card-footer">
+              <a href="https://github.com/marcoscmdev" target="_blank" rel="noopener" class="project-link">
+                <i class="bi bi-github"></i> Repositorio
+              </a>
+            </div>
           </div>
-          <div class="mb-3 mt-3">
-            <label for="email">Email</label>
-            <input type="email" class="form-control form-retrowave" id="email" name="email" placeholder="Introduce tu email" required />
+        </div>
+
+        <!-- Ejercicios Destacados 2025 -->
+        <div class="col-md-4">
+          <div class="project-card">
+            <div class="card-body">
+              <h3 class="project-title">Ejercicios Destacados 2025</h3>
+              <p class="project-desc">
+                Los ejercicios y prácticas más estimulantes del curso 2024/2025.
+                Lógica, POO, backend y frontend — los retos favoritos en código.
+              </p>
+              <div class="project-tags">
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">PHP</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+            </div>
+            <div class="card-footer">
+              <a href="https://github.com/marcoscmdev/featured-2025" target="_blank" rel="noopener" class="project-link">
+                <i class="bi bi-github"></i> Repositorio
+              </a>
+            </div>
           </div>
-          <div class="mb-3">
-            <label for="asunto">Asunto</label>
-            <input type="text" class="form-control form-retrowave" id="asunto" name="asunto" />
+        </div>
+
+        <!-- Placeholder -->
+        <div class="col-md-4">
+          <div class="project-card card-coming-soon">
+            <div class="card-body d-flex flex-column align-items-center justify-content-center text-center py-5">
+              <i class="bi bi-code-slash coming-soon-icon"></i>
+              <h3 class="project-title">Próximamente</h3>
+              <p class="project-desc">Nuevo proyecto en desarrollo.</p>
+            </div>
           </div>
-          <div class="mb-3 mt-3">
-            <label for="mensaje">Mensaje</label>
-            <textarea class="form-control form-retrowave" rows="5" id="mensaje" name="mensaje" required></textarea>
-          </div>
-         <div class="modal-footer justify-content-center gap-3">
-         <button type="submit" class="btn btn-retrowave">Enviar</button>
-          </div>
-          </div>
-        </form>
+        </div>
+
+      </div><!-- /row -->
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FRICADAS
+       ============================================================ -->
+  <section id="fricadas">
+    <div class="container px-4">
+
+      <p class="section-eyebrow">Fricadas</p>
+      <h2 class="section-headline">Side Projects</h2>
+
+      <div class="fricadas-empty">
+        <i class="bi bi-joystick"></i>
+        <span>Juegos, arte y más — próximamente</span>
       </div>
 
     </div>
-  </div>
-</div>
+  </section>
 
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer id="mainFooter">
+    Creado y desarrollado por <span class="footer-name">Marcos Castro</span>
+  </footer>
 
-    <footer class="text-center py-1 mt-1 border-top pie">
-      <p class="mb-1 txt-foot"> &copy;2025 Marcos CM <br />Desarrollado con Bootstrap y CSS</p>
-      <div class="mb-2">
-        <a href="https://github.com/marcoscmdev" class="mx-2" target="_blank" aria-label="GitHub">
-          <i class="bi bi-github"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/marcos-castro-713492254/" class="mx-2" target="_blank" aria-label="LinkedIn">
-          <i class="bi bi-linkedin"></i>
-        </a>
-        <a href="mailto:info@marcoscm.dev" class="mx-2" aria-label="Email">
-          <i class="bi bi-envelope"></i>
-        </a>
-        <a href="https://www.x.com/marcoscmdev" class="mx-2" aria-label="Twitter">
-          <i class="bi bi-twitter"></i>
-        </a>
-      </div>
-    </footer>
-
-  </div> <!-- cierre .page-wrapper -->
-<script>
-  function ajustarPaddingMain() {
-    const header = document.querySelector("header");
-    const main = document.querySelector("main");
-    const headerHeight = header.offsetHeight;
-    main.style.paddingTop = headerHeight + "px";
-  }
-
-  window.addEventListener("load", ajustarPaddingMain);
-  window.addEventListener("resize", ajustarPaddingMain);
-    // En móviles limitamos el padding-top
-  const esMovil = window.innerWidth <= 576;
-  
-
-  main.style.paddingTop = paddingTop;
-</script>
-
-<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-<script>
-  (function() {
-    emailjs.init("tmouDIr5JG_9DHdoB");
-  })();
-
-  document.getElementById("contact-form").addEventListener("submit", function(e) {
-    e.preventDefault();
-
-    emailjs.sendForm("service_zz8lc7j", "template_8ec5s5y", this)
-      .then(function(response) {
-        alert("Mensaje enviado correctamente. ¡Gracias por contactar!");
-        document.getElementById("contact-form").reset();
-      }, function(error) {
-        alert("Ocurrió un error al enviar el mensaje: " + error.text);
-      });
-  });
-</script>
+  <!-- Bootstrap JS bundle (accordion + carousel + collapse) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
