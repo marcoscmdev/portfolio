@@ -859,7 +859,12 @@ footer#mainFooter .footer-name { color: var(--red-mid); }
   :root { --section-gap: 3.5rem; }
 
   .hero-title   { font-size: 3rem; }
-  .portrait-img { max-width: 155px; }
+  .portrait-frame {
+    width: 180px;
+    height: 180px;
+    margin: 1.5rem auto 0;
+    display: block;
+  }
   .portrait-frame::before { display: none; }
 
   /* Experience tabs go vertical on mobile */
